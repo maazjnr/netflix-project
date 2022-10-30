@@ -27,12 +27,8 @@ const RegisterScreen = () => {
     >
       <KeyboardAvoidingView>
         <View style={{ alignItems: "center", justifyContent: "space-between" }}>
-          <Image
-            source={{
-              uri: `${Logo}`
-            }}
-            style={{ height: 60, width: 150, marginTop: 20 }}
-          />
+         <Image  source={require("../assets/580b57fcd9996e24bc43c529.png")}
+          style={{ width: 150, height: 50, marginTop: 40 }} />
         </View>
 
         <View style={{ width: 320, marginTop: 45 }}>

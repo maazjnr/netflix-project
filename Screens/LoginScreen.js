@@ -7,12 +7,10 @@ import {
   KeyboardAvoidingView,
   Image,
   Pressable,
+  StyleSheet,
 } from "react-native";
 import { Input } from "react-native-elements";
-
-const Logo = {
-  images: require("../assets/580b57fcd9996e24bc43c529.png")
-};
+import Logo from "../assets/580b57fcd9996e24bc43c529.png";
 
 const LoginScreen = () => {
   const navigation = useNavigation();
@@ -31,8 +29,8 @@ const LoginScreen = () => {
       <KeyboardAvoidingView>
         <View style={{ alignItems: "center", justifyContent: "space-between" }}>
           <Image
-          source={{uri: Logo.images}}
-            style={{ height: 60, width: 150, marginTop: 20 }}
+            style={styles.image}
+            source={require("../assets/580b57fcd9996e24bc43c529.png")}
           />
         </View>
 
@@ -124,5 +122,13 @@ const LoginScreen = () => {
     </SafeAreaView>
   );
 };
+
+const styles = StyleSheet.create({
+  image: {
+    width: 150,
+    height: 50,
+    marginTop: 40,
+  },
+});
 
 export default LoginScreen;
