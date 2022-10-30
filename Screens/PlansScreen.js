@@ -15,7 +15,7 @@ const PlansScreen = () => {
         <Text
           style={{
             fontSize: 17,
-            fontWeight: 600,
+            fontWeight: "bold",
           }}
         >
           Choose the plan that is right for you
@@ -29,7 +29,7 @@ const PlansScreen = () => {
             style={{
               marginLeft: 6,
               fontSize: 16,
-              fontWeight: "600",
+              fontWeight: "bold",
             }}
           >
             Recommendations just for you
@@ -44,7 +44,7 @@ const PlansScreen = () => {
             style={{
               marginLeft: 6,
               fontSize: 16,
-              fontWeight: "600",
+              fontWeight: "bold",
             }}
           >
             Cancel your plan anytime
@@ -59,7 +59,7 @@ const PlansScreen = () => {
             style={{
               marginLeft: 6,
               fontSize: 16,
-              fontWeight: "600",
+              fontWeight: "bold",
             }}
           >
             Watch all you want Ad free
@@ -73,8 +73,8 @@ const PlansScreen = () => {
               height: 150,
               borderRadius: 7,
               borderColor: "#e50914",
-              borderWidth: 0.5,
-              padding: 15
+              borderWidth: 1,
+              padding: 15,
             }}
           >
             <View>

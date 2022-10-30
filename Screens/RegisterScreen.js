@@ -15,8 +15,6 @@ const RegisterScreen = () => {
   const navigation = useNavigation();
   const [input, setInput] = useState("");
   const [password, setPassword] = useState("");
-  console.log(input);
-  console.log(password);
 
   return (
     <SafeAreaView
@@ -31,7 +29,7 @@ const RegisterScreen = () => {
         <View style={{ alignItems: "center", justifyContent: "space-between" }}>
           <Image
             source={{
-              uri: Logo,
+              uri: `${Logo}`
             }}
             style={{ height: 60, width: 150, marginTop: 20 }}
           />
@@ -70,10 +68,13 @@ const RegisterScreen = () => {
           />
         </View>
 
-        <Pressable onPress={() => navigation.navigate("Plans", {
-          input:input,
-          password:password
-        })}
+        <Pressable
+          onPress={() =>
+            navigation.navigate("Plans", {
+              input: input,
+              password: password,
+            })
+          }
           style={
             password.length > 4
               ? {
@@ -110,7 +111,6 @@ const RegisterScreen = () => {
             Register
           </Text>
         </Pressable>
-
       </KeyboardAvoidingView>
     </SafeAreaView>
   );

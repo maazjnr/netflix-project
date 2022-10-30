@@ -9,14 +9,15 @@ import {
   Pressable,
 } from "react-native";
 import { Input } from "react-native-elements";
-import Logo from "../assets/580b57fcd9996e24bc43c529.png";
+
+const Logo = {
+  images: require("../assets/580b57fcd9996e24bc43c529.png")
+};
 
 const LoginScreen = () => {
   const navigation = useNavigation();
   const [input, setInput] = useState("");
   const [password, setPassword] = useState("");
-  console.log(input);
-  console.log(password);
 
   return (
     <SafeAreaView
@@ -30,9 +31,7 @@ const LoginScreen = () => {
       <KeyboardAvoidingView>
         <View style={{ alignItems: "center", justifyContent: "space-between" }}>
           <Image
-            source={{
-              uri: Logo,
-            }}
+          source={{uri: Logo.images}}
             style={{ height: 60, width: 150, marginTop: 20 }}
           />
         </View>
