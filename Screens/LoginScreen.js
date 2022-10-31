@@ -8,6 +8,7 @@ import {
   Image,
   Pressable,
   StyleSheet,
+  TextInput,
 } from "react-native";
 import { Input } from "react-native-elements";
 import Logo from "../assets/580b57fcd9996e24bc43c529.png";
@@ -35,7 +36,7 @@ const LoginScreen = () => {
         </View>
 
         <View style={{ width: 320, marginTop: 45 }}>
-          <Input
+          <TextInput
             placeholderTextColor={"white"}
             type="email"
             placeholder="email"
@@ -43,14 +44,14 @@ const LoginScreen = () => {
             onChangeText={(text) => setInput(text)}
             style={{
               width: 330,
-              padding: 15,
+              padding: 20,
               borderRadius: 5,
               color: "white",
               backgroundColor: "gray",
             }}
           />
 
-          <Input
+          <TextInput
             placeholderTextColor={"white"}
             type="password"
             placeholder="password"
@@ -58,7 +59,7 @@ const LoginScreen = () => {
             onChangeText={(text) => setPassword(text)}
             style={{
               width: 330,
-              padding: 15,
+              padding: 20,
               borderRadius: 5,
               color: "white",
               backgroundColor: "gray",
@@ -71,17 +72,17 @@ const LoginScreen = () => {
           style={
             password.length > 4
               ? {
-                  width: 300,
+                  width: 330,
                   backgroundColor: "red",
                   marginLeft: "auto",
                   marginRight: "auto",
                   justifyContent: "center",
                   alignItems: "center",
                   padding: 14,
-                  marginTop: 10,
+                  marginTop: 15,
                 }
               : {
-                  width: 300,
+                  width: 330,
                   marginLeft: "auto",
                   marginRight: "auto",
                   justifyContent: "center",
@@ -89,7 +90,7 @@ const LoginScreen = () => {
                   borderColor: "#fff",
                   borderWidth: 2,
                   padding: 14,
-                  marginTop: 10,
+                  marginTop: 15,
                 }
           }
         >

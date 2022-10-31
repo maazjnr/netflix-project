@@ -7,6 +7,7 @@ import {
   KeyboardAvoidingView,
   Image,
   Pressable,
+  TextInput,
 } from "react-native";
 import { Input } from "react-native-elements";
 import Logo from "../assets/580b57fcd9996e24bc43c529.png";
@@ -27,12 +28,14 @@ const RegisterScreen = () => {
     >
       <KeyboardAvoidingView>
         <View style={{ alignItems: "center", justifyContent: "space-between" }}>
-         <Image  source={require("../assets/580b57fcd9996e24bc43c529.png")}
-          style={{ width: 150, height: 50, marginTop: 40 }} />
+          <Image
+            source={require("../assets/580b57fcd9996e24bc43c529.png")}
+            style={{ width: 150, height: 50, marginTop: 40 }}
+          />
         </View>
 
         <View style={{ width: 320, marginTop: 45 }}>
-          <Input
+          <TextInput
             placeholderTextColor={"white"}
             type="email"
             placeholder="email"
@@ -40,14 +43,14 @@ const RegisterScreen = () => {
             onChangeText={(text) => setInput(text)}
             style={{
               width: 330,
-              padding: 15,
+              padding: 20,
               borderRadius: 5,
               color: "white",
               backgroundColor: "gray",
             }}
           />
 
-          <Input
+          <TextInput
             placeholderTextColor={"white"}
             type="password"
             placeholder="password"
@@ -55,7 +58,7 @@ const RegisterScreen = () => {
             onChangeText={(text) => setPassword(text)}
             style={{
               width: 330,
-              padding: 15,
+              padding: 20,
               borderRadius: 5,
               color: "white",
               backgroundColor: "gray",
@@ -74,7 +77,7 @@ const RegisterScreen = () => {
           style={
             password.length > 4
               ? {
-                  width: 300,
+                  width: 330,
                   backgroundColor: "red",
                   marginLeft: "auto",
                   marginRight: "auto",
@@ -84,7 +87,7 @@ const RegisterScreen = () => {
                   marginTop: 10,
                 }
               : {
-                  width: 300,
+                  width: 330,
                   marginLeft: "auto",
                   marginRight: "auto",
                   justifyContent: "center",
