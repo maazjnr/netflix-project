@@ -17,8 +17,6 @@ const PlansScreen = () => {
 
   const [selected, setSelected] = useState([]);
   const [price, setPrice] = useState();
-  console.log(selected);
-  console.log(price);
 
   return (
     <>
@@ -214,7 +212,7 @@ const PlansScreen = () => {
           }}
         >
           <View>
-            <Text style={{ color: "#fff", fontSize: 17, fontWeight: 600 }}>
+            <Text style={{ color: "#fff", fontSize: 17, fontWeight: "bold" }}>
               Selected {selected}
             </Text>
           </View>
@@ -223,7 +221,7 @@ const PlansScreen = () => {
             <Text
               style={{
                 fontSize: 17,
-                color: "#fff",
+                color: "#ffff",
                 fontWeight: "bold",
               }}
             >
